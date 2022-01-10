@@ -1,5 +1,17 @@
 import logo from "../Frame.svg";
 import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+  Link,
+} from "react-router-dom";
+
+// pages
+
+import LoginPage from "../LoginPage/LoginPage.js";
+
 import "./Hello.css";
 export default class Hello extends Component {
   render() {
@@ -36,8 +48,11 @@ export default class Hello extends Component {
                 d="M16 17l-4 4m0 0l-4-4m4 4V3"
               />
             </svg>
+            {/* <Link to="/login-page">Buy me a Coffee</Link> */}
             <button className="button-coffee">
-              <a className="underline">Buy me a Coffee</a>
+              <Link to="/login-page" className="underline">
+                Buy me a Coffee
+              </Link>
             </button>
           </div>
           <div className="container-logo">

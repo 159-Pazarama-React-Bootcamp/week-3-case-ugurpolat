@@ -12,9 +12,6 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-p {
-}
-
 h1 {
   font-weight: 500%;
 }
@@ -50,4 +47,5 @@ h1 {
 .underline {
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
+  color: #fff;
 }
